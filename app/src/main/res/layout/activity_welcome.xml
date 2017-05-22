@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alumno.municipalalertsystem.WelcomeActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="275dp"
+        android:layout_height="180dp"
+        android:fontFamily="cursive"
+        android:text="Municipalidad                                                                                                                                                                                       de                             Santa Anita"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="50sp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="187dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="53dp"
+        android:fontFamily="serif-monospace"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="361dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="45dp"
+        android:elevation="0dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="133dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="50dp"
+        android:elevation="22dp"
+        android:text="Continue"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/usuario"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
