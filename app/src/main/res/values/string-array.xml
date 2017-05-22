@@ -5,4 +5,15 @@
         <item>Female</item>
     </string-array>
 
+    <string-array name="TypeAlert">
+        <item>Weather</item>
+        <item>Public Safety</item>
+        <item>Traffic</item>
+    </string-array>
+
+    <string-array name="TypeofAlert">
+        <item>Weather</item>
+        <item>Public Safety</item>
+        <item>Traffic</item>
+    </string-array>
 </resources>
