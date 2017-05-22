@@ -24,9 +24,7 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".ForgetActivity" />
         <activity android:name=".SigninActivity" />
-        <activity android:name=".LoginActivity">
-
-        </activity>
+        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".PhoneActivity" />
@@ -47,12 +45,10 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

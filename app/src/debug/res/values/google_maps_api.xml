@@ -12,7 +12,7 @@
     5A:67:BF:C4:C6:46:4F:CA:94:18:6E:9F:47:99:44:13:9F:D9:57:28
 
     SHA-1 certificate fingerprint:
-    5A:67:BF:C4:C6:46:4F:CA:94:18:6E:9F:47:99:44:13:9F:D9:57:28
+    5A:67:BF:C4:C6:46:4F:CA:94:18:6E:9F:47:99:44:13:9F:D9:57:28;com.alumno.municipalalertsystem
 
     Alternatively, follow the directions here:
     https://developers.google.com/maps/documentation/android/start#get-key
@@ -21,6 +21,6 @@
     string in this file.
     -->
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        YOUR_KEY_HERE
+        AIzaSyB9tUaGN3GgFqEJRbNp4jxdsCZgeMniA2w
     </string>
 </resources>
