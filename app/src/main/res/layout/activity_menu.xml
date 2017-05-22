@@ -27,14 +27,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="Telephones" />
+            android:text="Telephones"
+            android:onClick="phone"/>
 
         <Button
             android:id="@+id/button12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.31"
-            android:text="Message" />
+            android:text="Message"
+            android:onClick="sentmessage"/>
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
