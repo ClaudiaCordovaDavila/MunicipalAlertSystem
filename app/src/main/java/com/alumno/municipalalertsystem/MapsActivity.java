@@ -38,15 +38,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng peru = new LatLng(-12.05, -76.96);
+        LatLng sant = new LatLng(-12.0421263,-76.9659663);
+        LatLng munic = new LatLng(-12.0433296, -76.9712805);
+        LatLng comisaria = new LatLng(-12.0448818, -76.9766408);
+        LatLng hosp1 = new LatLng(-12.0459554,-76.9460781);
+        LatLng hosp2 = new LatLng(-12.0457243,-76.9479382);
+        LatLng hosp3 = new LatLng(-12.0473132,-76.9474486);
+        LatLng hosp4 = new LatLng(-12.0354006,-76.9517749);
 
         googleMap.addMarker(new MarkerOptions()
-            .position(peru)
-            .title("Santa Anita"));
+                .position(munic)
+                .title("Municipalidad de Santa Anita"));
+
+        googleMap.addMarker(new MarkerOptions()
+            .position(comisaria)
+            .title("Comisaria de Santa Anita"));
+
+        googleMap.addMarker(new MarkerOptions()
+                .position(hosp1)
+                .title("Hospital Hermilio Valdizan"));
+
+        googleMap.addMarker(new MarkerOptions()
+                .position(hosp2)
+                .title("Hospital EsSalud San Isidro Labrador"));
+        googleMap.addMarker(new MarkerOptions()
+                .position(hosp3)
+                .title("Hospital Jorge Voto Bernales"));
+
+        googleMap.addMarker(new MarkerOptions()
+                .position(hosp4)
+                .title("Clínica Municipal de Santa Anita"));
 
         CameraPosition cam = new CameraPosition.Builder()
-                .target(peru)
-                .zoom(16)
+                .target(sant)
+                .zoom(13)
                 .build();
 
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cam));
