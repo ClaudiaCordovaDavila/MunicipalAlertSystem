@@ -3,10 +3,12 @@ package com.alumno.municipalalertsystem;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -39,8 +41,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-12.05, -76.96);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Peru"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng peru = new LatLng(-12.05, -76.96);
+        CameraPosition cam = new CameraPosition.Builder()
+                .target(peru)
+                .zoom(2000)
+                .bearing(45)
+                .tilt(70)
+                .build();
+
+        CameraUpdate camera = CameraUpdateFactory.newCameraPosition(cam);
+        mMap.animateCamera(camera);
+        mMap.addMarker(new MarkerOptions().position(peru).title("Marker in Peru"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(peru));
     }
 }
