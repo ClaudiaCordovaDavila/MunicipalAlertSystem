@@ -5,16 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class SuccessSentActivity extends AppCompatActivity {
+public class SuccessCreAccountActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_success_sent);
+        setContentView(R.layout.activity_success_cre_account);
     }
-
-    public void successsubmitmessage(View view){
-        Intent intent=new Intent(this,MenuActivity.class);
+    public void accountlogin(View view){
+        Intent intent=new Intent(this,LoginActivity.class);
         startActivity(intent);
     }
 }
