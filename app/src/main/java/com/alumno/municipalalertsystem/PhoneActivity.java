@@ -67,7 +67,7 @@ public class PhoneActivity extends AppCompatActivity {
                 }
 
 
-                else if (false){
+                else {
 
                     Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+911"));
                     startActivity(intent);

@@ -6,16 +6,25 @@
     android:layout_height="match_parent"
     tools:context="com.alumno.municipalalertsystem.SigninActivity">
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        tools:layout_editor_absoluteX="132dp" />
+
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        android:id="@+id/tableLayout">
+        tools:layout_editor_absoluteY="-3dp">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textView12"
@@ -26,7 +35,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/email"
@@ -38,7 +47,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textView8"
@@ -49,7 +58,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/name"
@@ -64,33 +73,11 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Username" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID(password)" />
+                android:text="password" />
+
         </TableRow>
 
         <TableRow
@@ -103,6 +90,30 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="language"/>
+
         </TableRow>
 
         <TableRow
@@ -147,9 +158,9 @@
                 android:id="@+id/TypeofAlert"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
+                android:entries="@array/TypeAlert"
                 tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="190dp"
-                android:entries="@array/TypeAlert"/>
+                tools:layout_editor_absoluteY="190dp" />
         </TableRow>
 
         <TableRow
@@ -183,7 +194,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp" >
+            tools:layout_editor_absoluteY="8dp">
 
             <TextView
                 android:id="@+id/textView10"
@@ -196,7 +207,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp" >
+            tools:layout_editor_absoluteY="8dp">
 
             <EditText
                 android:id="@+id/number"
@@ -207,14 +218,5 @@
         </TableRow>
 
     </TableLayout>
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:text="Submit"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        tools:layout_editor_absoluteX="132dp" />
 
 </android.support.constraint.ConstraintLayout>

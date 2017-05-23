@@ -16,4 +16,10 @@
         <item>Public Safety</item>
         <item>Traffic</item>
     </string-array>
+    <string-array name="language">
+        <item>English</item>
+        <item>Spanish</item>
+
+    </string-array>
+
 </resources>
