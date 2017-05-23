@@ -1,6 +1,9 @@
 package com.alumno.municipalalertsystem;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -12,6 +15,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 
 public class sentMessageActivity extends AppCompatActivity {
 
@@ -52,6 +57,42 @@ public class sentMessageActivity extends AppCompatActivity {
         startActivityForResult(
                 Intent.createChooser(intent, "Seleccione una imagen"),
                 SELECT_FILE);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent){
+        super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
+        Uri selectedImageUri = null;
+        Uri selectedImage;
+
+        String filePath = null;
+        switch (requestCode) {
+            case SELECT_FILE:
+                if (resultCode == Activity.RESULT_OK) {
+                    selectedImage = imageReturnedIntent.getData();
+                    String selectedPath=selectedImage.getPath();
+                    if (requestCode == SELECT_FILE) {
+
+                        if (selectedPath != null) {
+                            InputStream imageStream = null;
+                            try {
+                                imageStream = getContentResolver().openInputStream(
+                                        selectedImage);
+                            } catch (FileNotFoundException e) {
+                                e.printStackTrace();
+                            }
+
+                            // Transformamos la URI de la imagen a inputStream y este a un Bitmap
+                            Bitmap bmp = BitmapFactory.decodeStream(imageStream);
+
+                            // Ponemos nuestro bitmap en un ImageView que tengamos en la vista
+                            ImageView mImg = (ImageView) findViewById(R.id.memory);
+                            mImg.setImageBitmap(bmp);
+
+                        }
+                    }
+                }
+                break;
+        }
     }
 
     public void submitmessage(View view) {
