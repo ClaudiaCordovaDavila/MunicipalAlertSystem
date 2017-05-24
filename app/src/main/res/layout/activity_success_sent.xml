@@ -17,12 +17,12 @@
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="46dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.605" />
+        app:layout_constraintHorizontal_bias="0.673" />
 
     <Button
         android:id="@+id/button8"
