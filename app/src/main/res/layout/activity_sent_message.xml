@@ -127,6 +127,7 @@
                     android:id="@+id/camera"
                     android:layout_width="120dp"
                     android:layout_height="60dp"
+                    android:onClick="takePicture"
                     app:srcCompat="@android:drawable/ic_menu_camera" />
 
                 <ImageButton
