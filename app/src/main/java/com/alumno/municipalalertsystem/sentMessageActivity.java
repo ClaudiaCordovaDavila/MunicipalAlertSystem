@@ -138,7 +138,10 @@ public class sentMessageActivity extends AppCompatActivity {
             }
         }
     }
-
+    public void submitmessage(View view){
+        Intent intent=new Intent(this,SuccessSentActivity.class);
+        startActivity(intent);
+    }
 
 
 }
