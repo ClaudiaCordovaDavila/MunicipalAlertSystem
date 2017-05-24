@@ -45,6 +45,7 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent=new Intent(this,MapsActivity.class);
         startActivity(intent);
     }
+
     private class HttpREST extends AsyncTask<Void, Void, Void> {
 
         @Override
