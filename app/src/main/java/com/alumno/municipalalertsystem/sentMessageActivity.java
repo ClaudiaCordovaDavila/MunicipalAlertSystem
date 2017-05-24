@@ -142,6 +142,4 @@ public class sentMessageActivity extends AppCompatActivity {
         Intent intent=new Intent(this,SuccessSentActivity.class);
         startActivity(intent);
     }
-
-
 }
