@@ -71,7 +71,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnlogin"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
@@ -81,5 +81,11 @@
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical|center" />
 
 </LinearLayout>
