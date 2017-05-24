@@ -72,7 +72,7 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="match_parent"
+        android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:fontFamily="serif-monospace"
